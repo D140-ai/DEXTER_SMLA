@@ -1,1 +1,824 @@
 
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "DEXTER SCRIPT",
+   Icon = 0,
+   LoadingTitle = "جاري التحقق من المفتاح...",
+   LoadingSubtitle = "by Sirius",
+   ShowText = "Rayfield",
+   Theme = "Default",
+   ToggleUIKeybind = "K",
+
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil,
+      FileName = "Big Hub"
+   },
+
+   Discord = {
+      Enabled = false,
+      Invite = "noinvitelink",
+      RememberJoins = true
+   },
+
+   KeySystem = true,
+   KeySettings = {
+      Title = "نظام الدخول",
+      Subtitle = "من فضلك أدخل المفتاح الصحيح",
+      Note = "المفتاح هو:DEXTER_SMLA",
+      FileName = "SZ_KeySave",
+      SaveKey = true,
+      GrabKeyFromSite = false,
+      Key = {"DEXTER_SMLA"} -- هنا المفتاح الحقيقي
+   }
+})
+
+local Tab = Window:CreateTab("صمله", 4483362458)
+Tab:CreateSection("SCRIPTS FOR SMLA")
+
+Rayfield:Notify({
+   Title = "تم التحقق من المفتاح ✅",
+   Content = "تم تشغيل السكربت بنجاح",
+   Duration = 5,
+})
+
+-- Anti-AFK Scripts
+Tab:CreateButton({
+   Name = "Anti-AFK (Solara)",
+   Callback = function()
+      loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-AntiAFK-System-SOLARA-21775"))()
+   end,
+})
+
+Tab:CreateButton({
+   Name = "Anti-AFK (EVXN)",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/evxncodes/mainroblox/main/anti-afk", true))()
+   end,
+})
+
+-- SZ Scripts
+Tab:CreateButton({Name = "EL7FRAA", Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/MADARA9223/AL7FRAA-MADARAxCATAY/refs/heads/main/AL7FRAA%20%7C%20MADARAxCATAYxROBERTO"))() end})
+Tab:CreateButton({Name = "Auto", Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/MADARA9223/AUTO-CLICK/refs/heads/main/MADARA%20AUTO%20CLICK"))() end})
+Tab:CreateButton({Name = "RS", Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/SALAH142876/HAMODAH_ON_TOP/refs/heads/main/Protected_7545697692462583.txt"))() end})
+Tab:CreateButton({Name = "Antiafk", Callback = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Anti-afk-lol-28917"))() end})
+Tab:CreateButton({Name = "M1", Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/FaresXForest/PLAYER/refs/heads/main/ATTACK"))() end})
+Tab:CreateButton({Name = "Bang", Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/n0kc/AtomicHub/main/Map-Al-Biout.lua"))() end})
+Tab:CreateButton({Name = "MR1", Callback = function() loadstring(game:HttpGet("https://pastebin.com/raw/NpBttt2g"))() end})
+Tab:CreateButton({Name = "Fly", Callback = function() loadstring(game:HttpGet('https://pastebin.com/raw/wXfWUdzb'))() end})
+Tab:CreateButton({Name = "S3", Callback = function() loadstring(game:HttpGet('https://pastebin.com/raw/FzJ9dxig'))() end})
+Tab:CreateButton({Name = "FO", Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/FaresXForest/antiafk-by-flex-and-fares/refs/heads/main/faresxflex"))() end})
+Tab:CreateButton({Name = "INFO", Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MADARA9223/MADARA-INFO-LUA/refs/heads/main/MADARA%20INFO.%20lua"))() end})
+Tab:CreateButton({Name = "FPS", Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CasperFlyModz/discord.gg-rips/main/FPSBooster.lua"))() end})
+Tab:CreateButton({Name = "ANTILAG", Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/VikiChardd/AntiLag_TSB/main/Protect_MeowTBS1999.lua.txt')))() end}) 
+Tab:CreateButton({Name = "VIP ANTIAFK", Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FaresXForest/VIPANTIAFK/refs/heads/main/VIPANTIAFK"))() end}) 
+Tab:CreateButton({Name = "EL7FRAA", Callback = function() loadstring(game:HttpGet("https://pastebin.com/raw/y7ytGxyc"))() end}) 
+
+-- Brookhaven Tab
+local BrookhavenTab = Window:CreateTab("Brookhaven", 4483362458)
+BrookhavenTab:CreateSection("سكربتات خاصة بلعبة Brookhaven")
+
+BrookhavenTab:CreateButton({
+   Name = "Brookhaven Script 1",
+   Callback = function()
+      loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-VR7-35232"))()
+   end,
+})
+
+BrookhavenTab:CreateButton({
+   Name = "Brookhaven Script 2 (Nokia Hub)",
+   Callback = function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/Ndora1/Ndora1/main/Nokia%20Hub.lua'))()
+   end,
+})
+
+BrookhavenTab:CreateButton({
+   Name = "Brookhaven Script 3 (Infinite Yield)",
+   Callback = function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+   end,
+})
+
+BrookhavenTab:CreateButton({
+   Name = "Brookhaven Script 4 (Troll No Key)",
+   Callback = function()
+      loadstring(game:HttpGet("https://rawscripts.net/raw/Brookhaven-RP-R4D-TROLL-NO-KEY-17625"))()
+   end,
+})
+
+BrookhavenTab:CreateButton({
+   Name = "CHAOS",
+   Callback = function()
+
+loadstring(game:HttpGet("https://rawscripts.net/raw/Brookhaven-RP-chaos-35511"))()
+end, 
+}) 
+
+BrookhavenTab:CreateButton({
+   Name = "CVR SMLA",
+   Callback = function()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/6bxfdBwG"))()
+end, 
+}) 
+
+BrookhavenTab:CreateButton({
+   Name = "TRACK",
+   Callback = function()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/2VN14JZ2"))()
+end, 
+}) 
+
+BrookhavenTab:CreateButton({
+   Name = "Fling",
+   Callback = function()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/TgnChb9E"))()
+end, 
+}) 
+
+local Tab = Window:CreateTab("صمله", 4483362458)
+Tab:CreateSection("SCRIPTS FOR SMLA 2")
+Tab:CreateButton({Name = "3ankboot", Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Jastrow77/3nkaboot0/refs/heads/main/jastr0w"))() end}) 
+Tab:CreateButton({Name = "ELSHAPA7", Callback = function() 
+loadstring(game:HttpGet('https://raw.githubusercontent.com/SYELE0/SCRIPT-VOID/refs/heads/main/ALSHABA7'))() end}) 
+Tab:CreateButton({Name ="ANTIAFK BY DEXTER", Callback = function()
+ --[[
+    💀 سكربت Anti-AFK الأسطوري 💀
+    ⚡ بواسطه: | SZ TEAM| DEXTER  
+
+    🚫 ضد Kick | Ban | AFK | يشتغل في كل المابات
+]]
+
+local Players = game:GetService("Players")
+local CoreGui = game:GetService("CoreGui")
+local VirtualUser = game:GetService("VirtualUser")
+local RunService = game:GetService("RunService")
+local LocalPlayer = Players.LocalPlayer
+local UserInputService = game:GetService("UserInputService")
+
+-- إنشاء GUI
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "AntiAFK_FO"
+ScreenGui.ResetOnSpawn = false
+pcall(function() ScreenGui.Parent = CoreGui end)
+if not ScreenGui.Parent then
+    ScreenGui.Parent = LocalPlayer:WaitForChild("PlayerGui")
+end
+
+-- Main Frame
+local MainFrame = Instance.new("Frame")
+MainFrame.Size = UDim2.new(0, 240, 0, 130)
+MainFrame.Position = UDim2.new(0.7, 0, 0.1, 0)
+MainFrame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+MainFrame.BorderSizePixel = 0
+MainFrame.Parent = ScreenGui
+
+local corner = Instance.new("UICorner")
+corner.CornerRadius = UDim.new(0, 10)
+corner.Parent = MainFrame
+
+-- Title
+local Title = Instance.new("TextLabel")
+Title.Size = UDim2.new(1, 0, 0, 35)
+Title.BackgroundTransparency = 1
+Title.Text = "🔥 Anti-AFK | SZ Team | DEXTER "
+Title.TextColor3 = Color3.fromRGB(255, 0, 0)
+Title.TextSize = 14
+Title.Font = Enum.Font.GothamBold
+Title.Parent = MainFrame
+
+-- Status
+local Status = Instance.new("TextLabel")
+Status.Position = UDim2.new(0, 0, 0.35, 0)
+Status.Size = UDim2.new(1, 0, 0, 25)
+Status.BackgroundTransparency = 1
+Status.Text = "Status: ✅ Active"
+Status.TextColor3 = Color3.fromRGB(0, 255, 0)
+Status.TextSize = 13
+Status.Font = Enum.Font.Gotham
+Status.Parent = MainFrame
+
+-- Timer
+local TimeLabel = Instance.new("TextLabel")
+TimeLabel.Position = UDim2.new(0, 0, 0.65, 0)
+TimeLabel.Size = UDim2.new(1, 0, 0, 25)
+TimeLabel.BackgroundTransparency = 1
+TimeLabel.Text = "Time: 00:00:00"
+TimeLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TimeLabel.TextSize = 13
+TimeLabel.Font = Enum.Font.Gotham
+TimeLabel.Parent = MainFrame
+
+-- Rainbow Text
+task.spawn(function()
+    while true do
+        for i = 0, 255, 10 do
+            Title.TextColor3 = Color3.fromRGB(255 - i, i, 255)
+            Status.TextColor3 = Color3.fromRGB(i, 255 - i, 255)
+            TimeLabel.TextColor3 = Color3.fromRGB(255, 255 - i, i)
+            task.wait(0.05)
+        end
+    end
+end)
+
+-- Drag Functionality
+local dragging = false
+local dragInput, dragStart, startPos
+
+MainFrame.InputBegan:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+        dragging = true
+        dragStart = input.Position
+        startPos = MainFrame.Position
+
+        input.Changed:Connect(function()
+            if input.UserInputState == Enum.UserInputState.End then
+                dragging = false
+            end
+        end)
+    end
+end)
+
+MainFrame.InputChanged:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+        dragInput = input
+    end
+end)
+
+UserInputService.InputChanged:Connect(function(input)
+    if input == dragInput and dragging then
+        local delta = input.Position - dragStart
+        MainFrame.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+    end
+end)
+
+-- Anti AFK Logic
+local connection
+local startTime = tick()
+local function updateTime()
+    local t = tick() - startTime
+    local h = math.floor(t / 3600)
+    local m = math.floor((t % 3600) / 60)
+    local s = math.floor(t % 60)
+    TimeLabel.Text = string.format("Time: %02d:%02d:%02d", h, m, s)
+end
+
+local function antiAFK()
+    connection = RunService.RenderStepped:Connect(function()
+        updateTime()
+        if tick() % (15 * 60) < 0.1 then
+            pcall(function()
+                VirtualUser:CaptureController()
+                VirtualUser:ClickButton2(Vector2.new())
+                Status.Text = "Simulating..."
+                task.wait(0.1)
+                Status.Text = "Status: ✅ Active"
+            end)
+        end
+    end)
+end
+
+-- Extra protection
+LocalPlayer.Idled:Connect(function()
+    VirtualUser:CaptureController()
+    VirtualUser:ClickButton2(Vector2.new())
+end)
+
+antiAFK()
+
+ScreenGui.Destroying:Connect(function()
+    if connection then connection:Disconnect() end
+end) end}) 
+
+local Tab = Window:CreateTab("باتشات", 4483362458)
+Tab:CreateSection("PATCHAT")
+Tab:CreateButton({Name = "patch 1", Callback = function()
+-- MADARA | CATAY - Simple Strong AntiKick & Freeze
+local Players = game:GetService("Players")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local RunService = game:GetService("RunService")
+
+local LocalPlayer = Players.LocalPlayer
+
+-- منع الطرد لما يسوي 277
+do
+    local mt = getrawmetatable(game)
+    setreadonly(mt, false)
+    local oldNamecall = mt.__namecall
+    mt.__namecall = newcclosure(function(self, ...)
+        local method = getnamecallmethod()
+        if method == "Kick" or tostring(self) == "Kick" then
+            warn("[MADARA | CATAY]: Kick Blocked.")
+            return nil
+        end
+        return oldNamecall(self, ...)
+    end)
+end
+
+-- تجميد الشخصية 
+local function freezeChar(char)
+    local hrp = char:WaitForChild("HumanoidRootPart", 5)
+    if hrp then
+        hrp.Anchored = true
+    end
+end
+
+if LocalPlayer.Character then
+    freezeChar(LocalPlayer.Character)
+end
+LocalPlayer.CharacterAdded:Connect(freezeChar)
+
+--ANTIKICK
+pcall(function()
+    ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(
+        "[MADARA | CATAY]: Protection Active.", "All")
+end)
+
+print("[MADARA | CATAY] Protection script loaded.") end}) 
+Tab:CreateButton({Name = "PATCH2", Callback = function()
+--[[ 
+  📌 Patch Anti-Shutdown لمدة 50000 ساعة (5.7 سنة)
+  يعمل في السيرفرات العامة والخاصة
+  ✨ صنع بواسطة: ويليام
+--]]
+
+local Players = game:GetService("Players")
+local Lighting = game:GetService("Lighting")
+local StarterGui = game:GetService("StarterGui")
+
+-- 🔒 حماية من التغبيش والشات والرسائل والكيك
+pcall(function()
+    Lighting.Blur:Destroy()
+end)
+
+game.DescendantAdded:Connect(function(obj)
+    if obj:IsA("BlurEffect") then
+        obj:Destroy()
+    elseif obj:IsA("Message") or obj:IsA("Hint") then
+        obj:Destroy()
+    end
+end)
+
+-- 🚫 تعطيل بعض الوظائف
+pcall(function()
+    StarterGui:SetCore("ResetButtonCallback", false)
+    StarterGui:SetCore("DevConsoleVisible", false)
+end)
+
+-- 🛡️ منع الكيك والشت داون
+local mt = getrawmetatable(game)
+setreadonly(mt, false)
+
+local old = mt.__namecall
+
+mt.__namecall = newcclosure(function(self, ...)
+    local method = getnamecallmethod()
+    
+    if method == "Kick" or method == "kick" then
+        warn("🚫 تم منع محاولة كيك.")
+        return nil
+    end
+
+    if self == game and method == "Shutdown" then
+        warn("🚫 تم منع محاولة شت داون.")
+        return nil
+    end
+
+    return old(self, ...)
+end)
+
+-- ⏳ مؤقت 50000 ساعة (180 مليون ثانية)
+task.spawn(function()
+    local totalTime = 50000 * 3600 -- 180,000,000 ثانية
+    local start = tick()
+
+    while tick() - start < totalTime do
+        task.wait(60) -- تحديث كل دقيقة
+    end
+
+    warn("⏱️ انتهى وقت الباتش بعد 50000 ساعة. سيتم الإغلاق.")
+    game:Shutdown()
+end)
+
+print("✅ تم تفعيل الباتش بنجاح بواسطة ويليام! راح يبقى شغال لمدة 50000 ساعة.") end}) 
+Tab:CreateButton({Name = "PATCH 3", Callback = function()
+-- 🌐 Ultra Low Net Mode by SHIKA
+local Lighting = game:GetService("Lighting")
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local Workspace = game:GetService("Workspace")
+
+-- إغلاق المؤثرات
+Lighting.GlobalShadows = false
+Lighting.FogEnd = 1000000
+Lighting.Brightness = 1
+Lighting.ClockTime = 14
+
+-- حذف التأثيرات البصرية
+for _, effect in pairs(Lighting:GetChildren()) do
+    if effect:IsA("PostEffect") or effect:IsA("BloomEffect") or effect:IsA("SunRaysEffect") then
+        effect:Destroy()
+    end
+end
+
+-- تقليل خامات الأجسام
+for _, obj in pairs(Workspace:GetDescendants()) do
+    if obj:IsA("BasePart") then
+        obj.Material = Enum.Material.Plastic
+        obj.Reflectance = 0
+    elseif obj:IsA("Decal") or obj:IsA("Texture") then
+        obj.Transparency = 1
+    end
+end
+
+-- إخفاء اللاعبين التانيين
+for _, p in pairs(Players:GetPlayers()) do
+    if p ~= Players.LocalPlayer then
+        if p.Character then
+            p.Character:Destroy()
+        end
+    end
+end
+
+-- منع ظهور شخصيات جديدة
+Players.PlayerAdded:Connect(function(plr)
+    plr.CharacterAdded:Connect(function(char)
+        wait(0.1)
+        char:Destroy()
+    end)
+end)
+
+-- تعطيل فيزيا غير ضرورية
+RunService:Set3dRenderingEnabled(false)
+
+print("✅ Ultra Low Net Mode Activated — استهلاك الشبكة في الحد الأدنى") end}) 
+Tab:CreateButton({Name = "PATCH 4", Callback = function()
+-- Dark Screen + Kick Bypass + GUI Cleaner
+
+local Players = game:GetService("Players")
+local Lighting = game:GetService("Lighting")
+local StarterGui = game:GetService("StarterGui")
+local LocalPlayer = Players.LocalPlayer
+
+-- Black Screen UI
+local ScreenGui = Instance.new("ScreenGui", game.CoreGui)
+ScreenGui.ResetOnSpawn = false
+
+local Frame = Instance.new("Frame", ScreenGui)
+Frame.Size = UDim2.new(1, 0, 1, 0)
+Frame.Position = UDim2.new(0, 0, 0, 0)
+Frame.BackgroundColor3 = Color3.new(0, 0, 0)
+Frame.BackgroundTransparency = 0
+
+-- Remove blur/effects
+for _, v in ipairs(Lighting:GetChildren()) do
+	if v:IsA("BlurEffect") or v:IsA("ColorCorrectionEffect") or v:IsA("SunRaysEffect") or v:IsA("BloomEffect") then
+		v:Destroy()
+	end
+end
+
+-- Allow UI movement & remove restrictions
+for _, v in ipairs(game:GetDescendants()) do
+	if v:IsA("TextLabel") or v:IsA("ImageLabel") or v:IsA("Frame") then
+		pcall(function() v.Draggable = true end)
+	end
+end
+
+-- Kick block
+local mt = getrawmetatable(game)
+setreadonly(mt, false)
+local old = mt.__namecall
+mt.__namecall = newcclosure(function(self, ...)
+	local args = {...}
+	local method = getnamecallmethod()
+	if tostring(self) == "Kick" or method == "Kick" then
+		return warn("Kick Blocked")
+	end
+	return old(self, unpack(args))
+end) end}) 
+Tab:CreateButton({Name = "PATCH 5", Callback = function()
+-- Script by RS ON TOP 
+local blurEffect = game:GetService("Lighting"):FindFirstChildOfClass("BlurEffect")
+if blurEffect then
+    blurEffect:Destroy() -- Removes the blur effect
+end
+
+local gui = game:GetService("CoreGui"):FindFirstChild("RobloxPromptGui")
+if gui then
+    gui:Destroy() -- Removes the "Lost Connection" GUI
+end
+
+print("تم إخفاء رسالة قطع الاتصال والتأثيرات بنجاح!")
+
+print("توضيح شاشه") end}) 
+Tab:CreateButton({Name = "PATCH 6", Callback = function()
+-- Anti Lag Script (يشمل Anti Lag + Anti Crash + Day 0 + FC)
+
+local function antiLag()
+    for _, v in pairs(game:GetDescendants()) do
+        if v:IsA("ParticleEmitter") or v:IsA("Trail") or v:IsA("Explosion") then
+            v.Enabled = false  -- تعطيل الجزيئات والانفجارات التي تسبب اللاج
+        elseif v:IsA("Sound") then
+            v.Volume = 0  -- تعطيل جميع الأصوات لتخفيف الضغط
+        elseif v:IsA("BasePart") and not v.Anchored then
+            v.Velocity = Vector3.new(0, 0, 0)  -- إيقاف الأجزاء المتحركة
+        end
+    end
+    print("✅ Anti Lag: تم تعطيل كل الأشياء اللي تسبب لاق")
+end
+
+local function antiCrash()
+    setfpscap(120)  -- ضبط الفريمات لمنع الكراش
+    task.spawn(function()
+        while true do
+            task.wait(5)
+            collectgarbage()  -- تنظيف الذاكرة كل 5 ثواني لمنع التهنيق
+        end
+    end)
+    print("✅ Anti Crash: تم تفعيل الحماية من الكراش")
+end
+
+local function dayZero()
+    game:GetService("Lighting").Brightness = 1  -- إعادة الإضاءة لوضعها الطبيعي
+    game:GetService("Lighting").FogEnd = 100000  -- إزالة الضباب تمامًا
+    for _, v in pairs(game:GetService("Players"):GetPlayers()) do
+        if v.Character and v.Character:FindFirstChild("Humanoid") then
+            v.Character.Humanoid.WalkSpeed = 16  -- إعادة سرعة المشي للوضع الطبيعي
+        end
+    end
+    print("✅ Day 0: تم تصحيح تأثيرات اللاج")
+end
+
+local function fullClean()
+    for _, v in pairs(workspace:GetChildren()) do
+        if v:IsA("MeshPart") or v:IsA("UnionOperation") or v:IsA("BasePart") then
+            v.Material = Enum.Material.SmoothPlastic  -- تقليل جودة الخامات لتحسين الأداء
+        elseif v:IsA("Decal") or v:IsA("Texture") then
+            v:Destroy()  -- إزالة جميع الديكورات الزائدة
+        end
+    end
+    print("✅ FC: تم إزالة كل عناصر اللاج")
+end
+
+local function antiLagSystem()
+    antiLag()
+    antiCrash()
+    dayZero()
+    fullClean()
+    print("🚀 Anti Lag System: تم تحسين الأداء وإزالة اللاج بالكامل!")
+end
+
+antiLagSystem() end}) 
+Tab:CreateButton({Name = "PATCH 7", Callback = function()
+-- 🛠️ سكربت تحسين أداء الجوال لأقصى درجة لمدة 8 ساعات
+
+local duration = 8 * 60 * 60 -- 8 ساعات بالثواني
+local startTime = tick() -- حفظ وقت بدء التشغيل
+
+-- 🚀 تحسين الشبكة
+game:GetService("NetworkClient"):SetOutgoingKBPSLimit(1000) -- تقليل استهلاك الإنترنت
+game:GetService("UserSettings"):GetService("GameSettings").NetworkQuality = Enum.NetworkQuality.Low
+
+-- 🔥 إلغاء الرسوميات الثقيلة
+local lighting = game:GetService("Lighting")
+lighting.GlobalShadows = false -- تعطيل الظلال
+lighting.Brightness = 1 -- تقليل السطوع
+lighting.FogEnd = 9e9 -- إزالة الضباب
+lighting.ClockTime = 12 -- جعل الإضاءة ثابتة
+
+-- 📉 تقليل استهلاك الـ RAM
+for _, v in pairs(game:GetDescendants()) do
+    if v:IsA("BasePart") then
+        v.Material = Enum.Material.SmoothPlastic -- تقليل جودة المواد
+    end
+end
+
+-- 💤 تعطيل تأثيرات غير ضرورية
+game:GetService("RunService"):Set3dRenderingEnabled(false) -- تعطيل العرض الثلاثي الأبعاد
+
+-- ⏳ منع الطرد بسبب عدم الحركة
+local virtualUser = game:GetService("VirtualUser")
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+    virtualUser:ClickButton2(Vector2.new(0,0))
+end)
+
+-- 🕒 تشغيل السكربت لمدة 8 ساعات فقط
+while tick() - startTime < duration do
+    wait(60) -- فحص كل دقيقة للتأكد من استمرار التحسينات
+end
+
+-- ⛔ بعد 8 ساعات، يعيد الوضع الطبيعي
+game:GetService("RunService"):Set3dRenderingEnabled(true) -- إعادة تفعيل العرض الثلاثي
+lighting.GlobalShadows = true -- إعادة تفعيل الظلال
+lighting.FogEnd = 1000 -- إعادة الضباب لوضعه الطبيعي
+game:GetService("NetworkClient"):SetOutgoingKBPSLimit(3000) -- إعادة سرعة الإنترنت الطبيعية end}) 
+Tab:CreateButton({Name = "PATCH 8", Callback = function()
+-- سكربت الصمود المتطور مع Fake Disconnection - فارس و تيم FO
+-- يمنع الطرد، يثبت الاتصال، ويتعامل مع Shutdown تلقائيًا
+
+local RunService = game:GetService("RunService")
+local Players = game:GetService("Players")
+local NetworkClient = game:GetService("NetworkClient")
+local player = Players.LocalPlayer
+
+-- منع الطرد التلقائي
+local function preventKick()
+    local mt = getrawmetatable(game)
+    setreadonly(mt, false)
+    local oldIndex = mt.__namecall
+
+    mt.__namecall = newcclosure(function(self, ...)
+        local method = getnamecallmethod()
+        if method == "Kick" or method == "kick" then
+            return nil -- إلغاء أي محاولة طرد
+        end
+        return oldIndex(self, ...)
+    end)
+end
+
+-- تزييف بيانات البنج وجعلها تبدو طبيعية
+local function fakePing()
+    while true do
+        wait(5)
+        setfpscap(math.random(50, 60)) -- ضبط معدل الإطارات ليكون طبيعي
+        NetworkClient:SetOutgoingKBPSLimit(math.random(500, 800)) -- تعديل سرعة الاتصال
+    end
+end
+
+-- Fake Disconnection عند الـ Shutdown
+local function fakeDisconnection()
+    game:GetService("CoreGui").RobloxPromptGui.DescendantAdded:Connect(function(descendant)
+        if descendant:IsA("TextLabel") and string.find(descendant.Text, "This experience is shutting down") then
+            print("🔴 Shutdown detected! Activating Fake Disconnection...")
+
+            -- محاولة منع الإغلاق الفوري
+            pcall(function()
+                game:GetService("GuiService"):ClearError()
+            end)
+
+            -- تعطيل الاتصال مؤقتًا
+            NetworkClient:SetOutgoingKBPSLimit(0)
+            wait(5)
+
+            -- إعادة الاتصال تلقائيًا
+            NetworkClient:SetOutgoingKBPSLimit(math.random(500, 800))
+            print("✅ Fake Disconnection Activated! Attempting to  end}) 
+Tab:CreateButton({Name = "PATCH 9", Callback = function()
+if not _G.Ignore then _G.Ignore = {} end
+if not _G.WaitPerAmount then _G.WaitPerAmount = 500 end
+if _G.SendNotifications == nil then _G.SendNotifications = true end
+if _G.ConsoleLogs == nil then _G.ConsoleLogs = false end
+
+if not game:IsLoaded() then repeat task.wait() until game:IsLoaded() end
+
+if not _G.Settings then
+    _G.Settings = {
+        Players = {["Ignore Me"] = true, ["Ignore Others"] = true, ["Ignore Tools"] = true},
+        Meshes = {NoMesh = true, NoTexture = true, Destroy = true},
+        Images = {Invisible = true, Destroy = true},
+        Explosions = {Smaller = true, Invisible = true, Destroy = true},
+        Particles = {Invisible = true, Destroy = true},
+        TextLabels = {LowerQuality = true, Invisible = true, Destroy = true},
+        MeshParts = {LowerQuality = true, Invisible = true, NoTexture = true, NoMesh = true, Destroy = true},
+        Other = {
+            ["FPS Cap"] = 144,
+            ["No Camera Effects"] = true,
+            ["No Clothes"] = true,
+            ["Low Water Graphics"] = true,
+            ["No Shadows"] = true,
+            ["Low Rendering"] = true,
+            ["Low Quality Parts"] = true,
+            ["Low Quality Models"] = true,
+            ["Reset Materials"] = true,
+            ["Lower Quality MeshParts"] = true
+        }
+    }
+end
+
+local Players = game:GetService("Players")
+local Lighting = game:GetService("Lighting")
+local StarterGui = game:GetService("StarterGui")
+local MaterialService = game:GetService("MaterialService")
+
+local ME = Players.LocalPlayer
+repeat task.wait() until ME.Character
+
+task.wait(0.1)
+StarterGui:SetCore("SendNotification", {
+    Title = "🔥 FPS BOOSTER ULTRA",
+    Text = "تم التفعيل بنجاح • بواسطة مقبره 👑",
+    Duration = 5
+})
+
+coroutine.wrap(function()
+    local terrain = workspace:FindFirstChildOfClass("Terrain") or workspace.DescendantAdded:Wait()
+    terrain.WaterWaveSize = 0
+    terrain.WaterWaveSpeed = 0
+    terrain.WaterReflectance = 0
+    terrain.WaterTransparency = 0
+    if sethiddenproperty then
+        sethiddenproperty(terrain, "Decoration", false)
+    end
+end)()
+
+Lighting.GlobalShadows = false
+Lighting.FogEnd = 0.1
+Lighting.ShadowSoftness = 0
+if sethiddenproperty then
+    sethiddenproperty(Lighting, "Technology", 2)
+end
+
+settings().Rendering.QualityLevel = 1
+settings().Rendering.MeshPartDetailLevel = Enum.MeshPartDetailLevel.Level01
+
+for _, v in pairs(MaterialService:GetChildren()) do
+    v:Destroy()
+end
+MaterialService.Use2022Materials = false
+
+if setfpscap and _G.Settings.Other["FPS Cap"] then
+    setfpscap(_G.Settings.Other["FPS Cap"])
+end
+
+Players.PlayerAdded:Connect(function(player)
+    player.CharacterAdded:Connect(function(char)
+        for _, part in pairs(char:GetDescendants()) do
+            if part:IsA("Clothing") or part:IsA("SurfaceAppearance") then
+                part:Destroy()
+            end
+        end
+    end)
+end)
+
+local function CheckIfBad(instance)
+    if instance.Parent and instance.Parent ~= Players then
+        if instance:IsA("ParticleEmitter") or instance:IsA("Smoke") or instance:IsA("Fire") or instance:IsA("Sparkles") then
+            instance.Enabled = false
+            if _G.Settings.Particles.Destroy then
+                instance:Destroy()
+            end
+        elseif instance:IsA("TextLabel") or instance:IsA("BillboardGui") then
+            instance.Font = Enum.Font.SourceSans
+            instance.TextSize = 14
+            instance.RichText = false
+            instance.TextScaled = false
+            instance.Visible = not _G.Settings.TextLabels.Invisible
+        elseif instance:IsA("MeshPart") then
+            instance.RenderFidelity = 2
+            instance.Reflectance = 0
+            instance.Material = Enum.Material.Plastic
+            instance.TextureID = ""
+            instance.Transparency = 1
+        elseif instance:IsA("BasePart") and not instance:IsA("MeshPart") then
+            instance.Material = Enum.Material.Plastic
+            instance.Reflectance = 0
+        end
+    end
+end
+
+for _, v in pairs(game:GetDescendants()) do
+    CheckIfBad(v)
+end
+
+game.DescendantAdded:Connect(CheckIfBad)
+
+Players.LocalPlayer.Idled:Connect(function()
+    fireclickdetector(game.Players.LocalPlayer.Character.HumanoidRootPart.ClickDetector)
+end)
+
+game:GetService("NetworkClient"):SetOutgoingKBPSLimit(1000) end}) 
+
+local Tab = Window:CreateTab("اوامر من دكصتر", 4483362458)
+Tab:CreateSection("AWAMR")
+Tab:CreateButton({Name = "SANDBOX", Callback = function() end}) 
+Tab:CreateButton({Name = "ANTIAFK", Callback = function() end}) 
+Tab:CreateButton({Name = "Orbit", Callback = function() end}) 
+Tab:CreateButton({Name = "Antivoid", Callback = function() end}) 
+Tab:CreateButton({Name = "Autokeypress w", Callback = function() end}) 
+Tab:CreateButton({Name = "Antikick", Callback = function() end}) 
+Tab:CreateButton({Name = "FR", Callback = function() end})
+Tab:CreateButton({Name = "Autokeypress nan", Callback = function() end}) 
+Tab:CreateButton({Name = "datalimit 0", Callback = function() end}) 
+Tab:CreateButton({Name = "backtrack 350", Callback = function() end})
+Tab:CreateButton({Name = "INFO", Callback = function() end})
+Tab:CreateButton({Name = "Brightness nan", Callback = function() end})
+Tab:CreateButton({Name = "noshadows", Callback = function() end})
+Tab:CreateButton({Name ="datalimit 15", Callback = function() end})
+Tab:CreateButton({Name = "Chams", Callback = function() end})
+Tab:CreateButton({Name = "Anticrach", Callback = function() end})
+Tab:CreateButton({Name = "hide guise", Callback = function() end})
+Tab:CreateButton({Name = "Amttool", Callback = function() end})
+Tab:CreateButton({Name = "norender", Callback = function() end})
+Tab:CreateButton({Name = "Brightness", Callback = function() end})
+Tab:CreateButton({Name = "Autorjautorejoin", Callback = function() end})
+Tab:CreateButton({Name = "Despite folder", Callback = function() end})
+Tab:CreateButton({Name = "nogshadown 400", Callback = function() end})
+Tab:CreateButton({Name = "لازم انت تكتبهم ف انفتتي", Callback = function() end}) 
