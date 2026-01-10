@@ -26,7 +26,6 @@ local Window = Rayfield:CreateWindow({
    KeySettings = {
       Title = "نظام الدخول",
       Subtitle = "من فضلك أدخل المفتاح الصحيح",
-      Note = "المفتاح هو:DEXTER_SMLA",
       FileName = "SZ_KeySave",
       SaveKey = true,
       GrabKeyFromSite = false,
