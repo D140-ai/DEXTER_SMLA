@@ -1,4 +1,3 @@
-
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
@@ -26,6 +25,7 @@ local Window = Rayfield:CreateWindow({
    KeySettings = {
       Title = "نظام الدخول",
       Subtitle = "من فضلك أدخل المفتاح الصحيح",
+      Note = "المفتاح هو: de 7LWA",
       FileName = "SZ_KeySave",
       SaveKey = true,
       GrabKeyFromSite = false,
@@ -76,7 +76,10 @@ Tab:CreateButton({Name = "ANTILAG", Callback = function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/VikiChardd/AntiLag_TSB/main/Protect_MeowTBS1999.lua.txt')))() end}) 
 Tab:CreateButton({Name = "VIP ANTIAFK", Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/FaresXForest/VIPANTIAFK/refs/heads/main/VIPANTIAFK"))() end}) 
-Tab:CreateButton({Name = "EL7FRAA", Callback = function() loadstring(game:HttpGet("https://pastebin.com/raw/y7ytGxyc"))() end}) 
+Tab:CreateButton({Name = "سكربت صمله فيه كل شي", Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/mw965pHK"))() end}) 
+Tab:CreateButton({Name = "تقليل استهلاك نت من دكصتر", Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/Y7rwvMg4"))() end}) 
 
 -- Brookhaven Tab
 local BrookhavenTab = Window:CreateTab("Brookhaven", 4483362458)
@@ -127,6 +130,14 @@ end,
 }) 
 
 BrookhavenTab:CreateButton({
+   Name = "FLING",
+   Callback = function()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/TgnChb9E"))()
+end, 
+}) 
+
+BrookhavenTab:CreateButton({
    Name = "TRACK",
    Callback = function()
 
@@ -135,15 +146,15 @@ end,
 }) 
 
 BrookhavenTab:CreateButton({
-   Name = "Fling",
+   Name = "BANG SYSTEM",
    Callback = function()
 
-loadstring(game:HttpGet("https://pastebin.com/raw/TgnChb9E"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/H20CalibreYT/SystemBroken/main/script"))()
 end, 
 }) 
 
 local Tab = Window:CreateTab("صمله", 4483362458)
-Tab:CreateSection("SCRIPTS FOR SMLA 2")
+Tab:CreateSection("SCRIPTS FOR SMLA2")
 Tab:CreateButton({Name = "3ankboot", Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Jastrow77/3nkaboot0/refs/heads/main/jastr0w"))() end}) 
 Tab:CreateButton({Name = "ELSHAPA7", Callback = function() 
@@ -518,7 +529,7 @@ end
 print("تم إخفاء رسالة قطع الاتصال والتأثيرات بنجاح!")
 
 print("توضيح شاشه") end}) 
-Tab:CreateButton({Name = "PATCH 6", Callback = function()
+Tab:CreateButton({Name = "patch 6", Callback = function()
 -- Anti Lag Script (يشمل Anti Lag + Anti Crash + Day 0 + FC)
 
 local function antiLag()
@@ -576,225 +587,74 @@ local function antiLagSystem()
 end
 
 antiLagSystem() end}) 
-Tab:CreateButton({Name = "PATCH 7", Callback = function()
--- 🛠️ سكربت تحسين أداء الجوال لأقصى درجة لمدة 8 ساعات
+Tab:CreateButton({Name = "patch 7", Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/Nk91eApa"))() end}) 
+Tab:CreateButton({Name = "patch 8", Callback = function()
+-- 🌪️ UCAR PATCH - ANTI LAG SYSTEM BY مِقَبّـرهِ؟ 🔥
 
-local duration = 8 * 60 * 60 -- 8 ساعات بالثواني
-local startTime = tick() -- حفظ وقت بدء التشغيل
-
--- 🚀 تحسين الشبكة
-game:GetService("NetworkClient"):SetOutgoingKBPSLimit(1000) -- تقليل استهلاك الإنترنت
-game:GetService("UserSettings"):GetService("GameSettings").NetworkQuality = Enum.NetworkQuality.Low
-
--- 🔥 إلغاء الرسوميات الثقيلة
-local lighting = game:GetService("Lighting")
-lighting.GlobalShadows = false -- تعطيل الظلال
-lighting.Brightness = 1 -- تقليل السطوع
-lighting.FogEnd = 9e9 -- إزالة الضباب
-lighting.ClockTime = 12 -- جعل الإضاءة ثابتة
-
--- 📉 تقليل استهلاك الـ RAM
-for _, v in pairs(game:GetDescendants()) do
-    if v:IsA("BasePart") then
-        v.Material = Enum.Material.SmoothPlastic -- تقليل جودة المواد
-    end
-end
-
--- 💤 تعطيل تأثيرات غير ضرورية
-game:GetService("RunService"):Set3dRenderingEnabled(false) -- تعطيل العرض الثلاثي الأبعاد
-
--- ⏳ منع الطرد بسبب عدم الحركة
-local virtualUser = game:GetService("VirtualUser")
-game:GetService("Players").LocalPlayer.Idled:connect(function()
-    virtualUser:ClickButton2(Vector2.new(0,0))
-end)
-
--- 🕒 تشغيل السكربت لمدة 8 ساعات فقط
-while tick() - startTime < duration do
-    wait(60) -- فحص كل دقيقة للتأكد من استمرار التحسينات
-end
-
--- ⛔ بعد 8 ساعات، يعيد الوضع الطبيعي
-game:GetService("RunService"):Set3dRenderingEnabled(true) -- إعادة تفعيل العرض الثلاثي
-lighting.GlobalShadows = true -- إعادة تفعيل الظلال
-lighting.FogEnd = 1000 -- إعادة الضباب لوضعه الطبيعي
-game:GetService("NetworkClient"):SetOutgoingKBPSLimit(3000) -- إعادة سرعة الإنترنت الطبيعية end}) 
-Tab:CreateButton({Name = "PATCH 8", Callback = function()
--- سكربت الصمود المتطور مع Fake Disconnection - فارس و تيم FO
--- يمنع الطرد، يثبت الاتصال، ويتعامل مع Shutdown تلقائيًا
-
-local RunService = game:GetService("RunService")
-local Players = game:GetService("Players")
-local NetworkClient = game:GetService("NetworkClient")
-local player = Players.LocalPlayer
-
--- منع الطرد التلقائي
-local function preventKick()
-    local mt = getrawmetatable(game)
-    setreadonly(mt, false)
-    local oldIndex = mt.__namecall
-
-    mt.__namecall = newcclosure(function(self, ...)
-        local method = getnamecallmethod()
-        if method == "Kick" or method == "kick" then
-            return nil -- إلغاء أي محاولة طرد
-        end
-        return oldIndex(self, ...)
-    end)
-end
-
--- تزييف بيانات البنج وجعلها تبدو طبيعية
-local function fakePing()
-    while true do
-        wait(5)
-        setfpscap(math.random(50, 60)) -- ضبط معدل الإطارات ليكون طبيعي
-        NetworkClient:SetOutgoingKBPSLimit(math.random(500, 800)) -- تعديل سرعة الاتصال
-    end
-end
-
--- Fake Disconnection عند الـ Shutdown
-local function fakeDisconnection()
-    game:GetService("CoreGui").RobloxPromptGui.DescendantAdded:Connect(function(descendant)
-        if descendant:IsA("TextLabel") and string.find(descendant.Text, "This experience is shutting down") then
-            print("🔴 Shutdown detected! Activating Fake Disconnection...")
-
-            -- محاولة منع الإغلاق الفوري
-            pcall(function()
-                game:GetService("GuiService"):ClearError()
-            end)
-
-            -- تعطيل الاتصال مؤقتًا
-            NetworkClient:SetOutgoingKBPSLimit(0)
-            wait(5)
-
-            -- إعادة الاتصال تلقائيًا
-            NetworkClient:SetOutgoingKBPSLimit(math.random(500, 800))
-            print("✅ Fake Disconnection Activated! Attempting to  end}) 
-Tab:CreateButton({Name = "PATCH 9", Callback = function()
-if not _G.Ignore then _G.Ignore = {} end
-if not _G.WaitPerAmount then _G.WaitPerAmount = 500 end
-if _G.SendNotifications == nil then _G.SendNotifications = true end
-if _G.ConsoleLogs == nil then _G.ConsoleLogs = false end
-
-if not game:IsLoaded() then repeat task.wait() until game:IsLoaded() end
-
-if not _G.Settings then
-    _G.Settings = {
-        Players = {["Ignore Me"] = true, ["Ignore Others"] = true, ["Ignore Tools"] = true},
-        Meshes = {NoMesh = true, NoTexture = true, Destroy = true},
-        Images = {Invisible = true, Destroy = true},
-        Explosions = {Smaller = true, Invisible = true, Destroy = true},
-        Particles = {Invisible = true, Destroy = true},
-        TextLabels = {LowerQuality = true, Invisible = true, Destroy = true},
-        MeshParts = {LowerQuality = true, Invisible = true, NoTexture = true, NoMesh = true, Destroy = true},
-        Other = {
-            ["FPS Cap"] = 144,
-            ["No Camera Effects"] = true,
-            ["No Clothes"] = true,
-            ["Low Water Graphics"] = true,
-            ["No Shadows"] = true,
-            ["Low Rendering"] = true,
-            ["Low Quality Parts"] = true,
-            ["Low Quality Models"] = true,
-            ["Reset Materials"] = true,
-            ["Lower Quality MeshParts"] = true
-        }
-    }
-end
-
-local Players = game:GetService("Players")
-local Lighting = game:GetService("Lighting")
 local StarterGui = game:GetService("StarterGui")
-local MaterialService = game:GetService("MaterialService")
 
-local ME = Players.LocalPlayer
-repeat task.wait() until ME.Character
-
-task.wait(0.1)
+-- 🔔 إشعار أول باسمك
 StarterGui:SetCore("SendNotification", {
-    Title = "🔥 FPS BOOSTER ULTRA",
-    Text = "تم التفعيل بنجاح • بواسطة مقبره 👑",
-    Duration = 5
+    Title = "تم التفعيل ✅",
+    Text = "🔰 نظام الحماية من اللاغ: مِقَبّـرهِ",
+    Duration = 20
 })
 
-coroutine.wrap(function()
-    local terrain = workspace:FindFirstChildOfClass("Terrain") or workspace.DescendantAdded:Wait()
-    terrain.WaterWaveSize = 0
-    terrain.WaterWaveSpeed = 0
-    terrain.WaterReflectance = 0
-    terrain.WaterTransparency = 0
-    if sethiddenproperty then
-        sethiddenproperty(terrain, "Decoration", false)
+-- 🧠 حذف الأشياء اللي تسبب لاق
+local removed = 0
+
+for _, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("Explosion") or v:IsA("Smoke") or v:IsA("Fire") or v:IsA("ParticleEmitter") or v:IsA("Trail") or v:IsA("Sound") or v:IsA("Decal") then
+        pcall(function()
+            v:Destroy()
+            removed += 1
+        end)
     end
-end)()
-
-Lighting.GlobalShadows = false
-Lighting.FogEnd = 0.1
-Lighting.ShadowSoftness = 0
-if sethiddenproperty then
-    sethiddenproperty(Lighting, "Technology", 2)
 end
 
-settings().Rendering.QualityLevel = 1
-settings().Rendering.MeshPartDetailLevel = Enum.MeshPartDetailLevel.Level01
+-- 🌟 إشعار تاني بعد الحذف
+StarterGui:SetCore("SendNotification", {
+    Title = "♻️ تنظيف اللاق",
+    Text = "🧹 تم حذف " .. removed .. " عنصر مسبب للاق",
+    Duration = 20
+})
 
-for _, v in pairs(MaterialService:GetChildren()) do
-    v:Destroy()
-end
-MaterialService.Use2022Materials = false
+-- ⏳ باتش مؤقت لمدة أسبوع
+local Expiry = os.time() + (7 * 24 * 60 * 60) -- أسبوع
 
-if setfpscap and _G.Settings.Other["FPS Cap"] then
-    setfpscap(_G.Settings.Other["FPS Cap"])
-end
+-- تقليل الإضاءة والشادو والمؤثرات فقط (بدون تعطيل الشاشة)
+settings().Rendering.QualityLevel = Enum.QualityLevel.Level01
 
-Players.PlayerAdded:Connect(function(player)
-    player.CharacterAdded:Connect(function(char)
-        for _, part in pairs(char:GetDescendants()) do
-            if part:IsA("Clothing") or part:IsA("SurfaceAppearance") then
-                part:Destroy()
-            end
-        end
+while os.time() < Expiry do
+    pcall(function()
+        local lighting = game:GetService("Lighting")
+        lighting.GlobalShadows = false
+        lighting.FogEnd = 1000000
+        lighting.FogStart = 999999
+        lighting.Brightness = 1
+        lighting.ClockTime = 12
+        lighting.OutdoorAmbient = Color3.fromRGB(128, 128, 128)
+        lighting.EnvironmentDiffuseScale = 0
+        lighting.EnvironmentSpecularScale = 0
     end)
-end)
 
-local function CheckIfBad(instance)
-    if instance.Parent and instance.Parent ~= Players then
-        if instance:IsA("ParticleEmitter") or instance:IsA("Smoke") or instance:IsA("Fire") or instance:IsA("Sparkles") then
-            instance.Enabled = false
-            if _G.Settings.Particles.Destroy then
-                instance:Destroy()
-            end
-        elseif instance:IsA("TextLabel") or instance:IsA("BillboardGui") then
-            instance.Font = Enum.Font.SourceSans
-            instance.TextSize = 14
-            instance.RichText = false
-            instance.TextScaled = false
-            instance.Visible = not _G.Settings.TextLabels.Invisible
-        elseif instance:IsA("MeshPart") then
-            instance.RenderFidelity = 2
-            instance.Reflectance = 0
-            instance.Material = Enum.Material.Plastic
-            instance.TextureID = ""
-            instance.Transparency = 1
-        elseif instance:IsA("BasePart") and not instance:IsA("MeshPart") then
-            instance.Material = Enum.Material.Plastic
-            instance.Reflectance = 0
-        end
-    end
+    -- إشعار وهمي كل دقيقة
+    StarterGui:SetCore("SendNotification", {
+        Title = "🚀 FPS BOOST",
+        Text = "🔥 FPS: 5000+ | PING: 0 | MEMORY: صاروخ 💥",
+        Duration = 20
+    })
+
+    wait(60)
 end
 
-for _, v in pairs(game:GetDescendants()) do
-    CheckIfBad(v)
-end
-
-game.DescendantAdded:Connect(CheckIfBad)
-
-Players.LocalPlayer.Idled:Connect(function()
-    fireclickdetector(game.Players.LocalPlayer.Character.HumanoidRootPart.ClickDetector)
-end)
-
-game:GetService("NetworkClient"):SetOutgoingKBPSLimit(1000) end}) 
-
+-- 🕓 بعد أسبوع يرجع الوضع طبيعي
+StarterGui:SetCore("SendNotification", {
+    Title = "⏱️ انتهى الباتش",
+    Text = "الآن يمكن للرسوميات تعود تدريجيًا",
+    Duration = 10
+}) end}) 
 local Tab = Window:CreateTab("اوامر من دكصتر", 4483362458)
 Tab:CreateSection("AWAMR")
 Tab:CreateButton({Name = "SANDBOX", Callback = function() end}) 
